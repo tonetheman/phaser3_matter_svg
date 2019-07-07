@@ -7,7 +7,7 @@ class GameScene extends Phaser.Scene {
     }
     preload() {
         this.load.spritesheet('balls', 
-        'balls.png', { frameWidth: 17, frameHeight: 17 });
+        'assets/balls.png', { frameWidth: 17, frameHeight: 17 });
     }
     releaseBall () {
         var ball = this.matter.add.image(Phaser.Math.Between(32, 768), -200, 'balls', Phaser.Math.Between(0, 5));
